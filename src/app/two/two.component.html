@@ -1,0 +1,11 @@
+<div class="col-4 my-4 mx-4">
+    <input value="{{userInput}}" type="text" class="form-control" [(ngModel)]="userInput">
+</div>
+<!-- <h2 class="my-4 mx-4">{{userInput}}</h2> -->
+<div class="col-4 my-4 mx-4">
+    <input type="text" value="{{userInput}}" class="form-control" [(ngModel)]="userInput">
+</div>
+
+<div class="col-4 my-4 mx-4">
+    <button class="btn btn-warning" [disabled]="userInput === ''" (click)="userInput = ''">Reset</button>
+</div>
